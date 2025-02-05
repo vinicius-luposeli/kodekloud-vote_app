@@ -4,15 +4,17 @@ Por aqui estou armazenando as informações do Deploy de uma aplicação desenvo
 
 A aplicação toda consiste nos seguintes serviços
 
-## FrontEnd
+## Arquitetura
+
+### FrontEnd
 - Vote app (Python)
 - Result app (Node.js)
 
-## Cache
+### Cache
 - Redis (Serve para armazenar temporariamente os votos)
 
-## Bando de dados
+### Bando de dados
 - Postgresql (Armazenamento persistente para os votos)
 
-## Integração
+### Integração
 - Worker app (.Net - Serve para fazer a integração dos votos enviados ao Redis com o banco de dados para persistência de dados)
